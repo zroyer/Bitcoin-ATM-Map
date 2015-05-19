@@ -12,7 +12,7 @@ angular.module('bitcoinAtmMapApp')
     
     $scope.map = {
       center: {
-        latitude: 30.2669444, 
+        latitude: 30.4669444, 
         longitude: -97.7427778
       },
       zoom: 10
@@ -22,14 +22,14 @@ angular.module('bitcoinAtmMapApp')
       {
         coords: {
           latitude: 30.2669444,
-          longitude: -97.7427778
+          longitude: -97.8427778
         },
         idKey:1,
         message:"message 1",
       },
       {
         coords: {
-          latitude: 30.2669444,
+          latitude: 29.2669444,
           longitude: -97.7437778
         },
         options: { title: "title 2"},
