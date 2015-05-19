@@ -1,12 +1,14 @@
 <h1 class='title'>Bitcoin ATMs</h1>
 
 <ui-gmap-google-map center="map.center" zoom="map.zoom">
-  <ui-gmap-marker data-ng-repeat="marker in markerList" coords="marker.coords" options="marker.options" idKey="marker.idKey">
-    <window isIconVisibleOnClick="true">
-      <p>
-        {{marker.message}}
-      </p>
-    </window>
+  <ui-gmap-marker data-ng-repeat="marker in markerList" coords="marker.coords" options="marker.options" idKey="marker.idKey" click="onClick()">
+    <ui-gmap-window options="windowOptions" closeClick="closeClick()">
+      <div>
+        <span class='markertitle'>{{marker.title}}</span>
+        <br>
+        <span class='markeraddress'>{{marker.address}}</span>
+      </div>
+    </ui-gmap-window>
   </marker>
 </ui-gmap-google-map>
 
