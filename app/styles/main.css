@@ -1,6 +1,10 @@
 .angular-google-map-container{
-  height: 400px;
+  height: 600px;
+}
 
+.title {
+  text-align: center;
+  padding-bottom:20px;
 }
 
 .browsehappy {
