@@ -1,7 +1,8 @@
-# bitcoin-atm-map
+# Bitcoin ATM Map
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Find nearby Bitcoin ATMs
+
+Created with AngularJS + Google Maps
 
 ## Build & development
 
