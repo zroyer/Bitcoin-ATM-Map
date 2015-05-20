@@ -10,12 +10,23 @@
 angular.module('bitcoinAtmMapApp')
   .controller('MainCtrl', function ($scope) {
     
+    $scope.onClick = function() {
+      if($scope.visible === false) {
+        $scope.visible = !$scope.visible;        
+      }
+      $scope.visible = false;
+    };
+
+    $scope.closeClick = function() {
+      $scope.visible = false;
+    };
+
     $scope.map = {
       center: {
         latitude: 30.2679444, 
         longitude: -97.7427778
       },
-      zoom: 10
+      zoom: 6
     };
 
     $scope.markerList = [
@@ -127,16 +138,153 @@ angular.module('bitcoinAtmMapApp')
        show: false,
        visible: false
       },
+      {
+       title: 'Hacker Dojo',
+       address1: '599 Fairchild Dr',
+       address2: 'Mountain View, CA 94043',
+       idKey: 10,
+       coords: {
+         latitude: 37.402937,
+         longitude: -122.049943
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Westfield Valley Fair',
+       address1: '2855 Stevens Creek Boulevard',
+       address2: 'Santa Clara, CA 95050',
+       idKey: 11,
+       coords: {
+         latitude: 37.325885,
+         longitude: -121.945375
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Draper University',
+       address1: 'E 3rd Ave',
+       address2: 'San Mateo, CA 94401',
+       idKey: 12,
+       coords: {
+         latitude: 37.570771,
+         longitude: -122.313990
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Nakamotos',
+       address1: '2415 Mission St',
+       address2: 'San Francisco, CA 94110',
+       idKey: 13,
+       coords: {
+         latitude: 37.758426,
+         longitude: -122.418899
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Good Vapor Downtown LA',
+       address1: '133 E 3rd St',
+       address2: 'Los Angeles, CA 90013',
+       idKey: 14,
+       coords: {
+         latitude: 34.048774,
+         longitude: -118.245123
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Vapor Craze',
+       address1: '3837 Atlantic Ave',
+       address2: 'Long Beach, CA 90807',
+       idKey: 15,
+       coords: {
+         latitude: 33.828170,
+         longitude: -118.185356
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'CrowdGather Headquarters',
+       address1: '20300 Ventura Boulevard',
+       address2: 'Woodland Hills, CA 91364',
+       idKey: 16,
+       coords: {
+         latitude: 34.168979,
+         longitude: -118.575231
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Eureka Building',
+       address1: '1621 Alton Parkway',
+       address2: 'Irvine, CA 92606',
+       idKey: 17,
+       coords: {
+         latitude: 33.699406,
+         longitude: -117.846822
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'ONeils on Wells',
+       address1: '411 South Wells Street',
+       address2: 'Chicago, IL 60607',
+       idKey: 18,
+       coords: {
+         latitude: 41.876409,
+         longitude: -87.633361
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Blue 1647 Tech Innovation Center',
+       address1: '1647 S Blue Island Ave',
+       address2: 'Chicago, IL 60608',
+       idKey: 18,
+       coords: {
+         latitude: 41.858408,
+         longitude: -87.660326
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Seven Ten Lanes',
+       address1: '1055 E 55th St',
+       address2: 'Chicago, IL 60637',
+       idKey: 19,
+       coords: {
+         latitude: 41.795004,
+         longitude: -87.600340
+       },
+       show: false,
+       visible: false
+      },
+            {
+       title: 'The Henley Vaporium in SoHo',
+       address1: '23 Cleveland Pl',
+       address2: 'New York, NY 10012',
+       idKey: 19,
+       coords: {
+         latitude: 40.721764,
+         longitude: -73.997072
+       },
+       show: false,
+       visible: false
+      },
 
     ];
 
-    $scope.onClick = function() {
-        $scope.visible = !$scope.visible;
-    };
-
-    $scope.closeClick = function() {
-        $scope.visible = false;
-    };
 
 
   });
