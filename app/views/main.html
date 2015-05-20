@@ -1,4 +1,9 @@
-<h1 class='title'>Bitcoin ATMs</h1>
+<div class="container-fluid">
+  <div id="btc-quote"></div>
+  <h1 class="title hidden-xs"> Bitcoin ATMs! </h1>
+</div>
+<hr>
+
 
 <ui-gmap-google-map center="map.center" zoom="map.zoom">
   <ui-gmap-marker data-ng-repeat="marker in markerList" coords="marker.coords" options="marker.options" idKey="marker.idKey" click="onClick()">

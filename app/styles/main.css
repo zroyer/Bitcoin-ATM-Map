@@ -1,22 +1,27 @@
 .angular-google-map,
 .angular-google-map-container{
   height: 80vh;
+  border-radius: 2px;
 }
 
-.titlecontainer{
-  height: 20vh;
+#btc-quote {
+  float: right;
 }
 
 .markertitle {
   font-weight: bold;
 }
 
+.container-fluid {
+  height: 75px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
 .title {
-  text-align: center;
+  font-size: 44px;
   color: #fff;
   font-weight: bold;
-  font-size: 44px;
-  padding: 3%;
 }
 
 .browsehappy {
@@ -31,6 +36,7 @@ body {
   width: 100%;
   padding: 0;
   background-color: #6e5398;
+  overflow-y: none;
 }
 
 .mapcontainer {
@@ -40,8 +46,8 @@ body {
   width: 100%;
   padding-left: 25px;
   padding-right: 25px;
-
-  bottom: 25px;
+/*  padding-bottom: 25px;*/
+  top: 0px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
