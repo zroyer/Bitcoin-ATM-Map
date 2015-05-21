@@ -29,6 +29,14 @@ angular.module('bitcoinAtmMapApp')
       zoom: 6
     };
 
+    // $http.get('http://coinatmradar.com/api/locations/').
+    //   success(function(data) {
+    //     $scope.locations = data;
+    //   }).
+    //   error(function(data) {
+    //     console.log(data);
+    //   });
+
     $scope.markerList = [
       {
         title: 'HandleBar',
@@ -270,7 +278,7 @@ angular.module('bitcoinAtmMapApp')
        show: false,
        visible: false
       },
-            {
+      {
        title: 'The Henley Vaporium in SoHo',
        address1: '23 Cleveland Pl',
        address2: 'New York, NY 10012',
@@ -278,6 +286,78 @@ angular.module('bitcoinAtmMapApp')
        coords: {
          latitude: 40.721764,
          longitude: -73.997072
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Overstock.com',
+       address1: '6350 South 3000 East',
+       address2: 'Cottonwood Heights, UT 84121',
+       idKey: 20,
+       coords: {
+         latitude: 40.633241,
+         longitude: -111.808474
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Denver Bitcoin Center',
+       address1: '747 Sheridan Blvd',
+       address2: 'Lakewood, CO 80241',
+       idKey: 21,
+       coords: {
+         latitude: 39.728976,
+         longitude: -105.054584
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Tasty Burger - Harvard Square',
+       address1: '40 JFK Street',
+       address2: 'Cambridge, MA 02138',
+       idKey: 22,
+       coords: {
+         latitude: 42.372582,
+         longitude: -71.119832
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Gelateria Cosi o Cosi',
+       address1: 'No. 151, Dun Hua S. Road, Sec. 1',
+       address2: 'Taipei, Taiwan',
+       idKey: 23,
+       coords: {
+         latitude: 25.030003,
+         longitude: 121.549343
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'SetCell',
+       address1: '500 Delaware Street',
+       address2: 'Kansas City, MO 64105',
+       idKey: 24,
+       coords: {
+         latitude: 39.107869,
+         longitude: -94.584321
+       },
+       show: false,
+       visible: false
+      },
+      {
+       title: 'Moksa Restaurant',
+       address1: '450 Massachusetts Ave',
+       address2: 'Cambridge, Massachusetts 02139',
+       idKey: 25,
+       coords: {
+         latitude: 42.363443,
+         longitude: -71.101268
        },
        show: false,
        visible: false
