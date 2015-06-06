@@ -15,6 +15,7 @@
 .search{
   height: 71px;
   margin-top: 12px;
+  margin: 10px;
   border-radius: 3px;
   font-size: 30px;
   background-color: #fdfdfd;
@@ -27,7 +28,7 @@
 
 #btc-quote {
   margin-top: 20px;
-  margin-right: 27px;
+  margin-right: 40px;
 }
 
 .markertitle {
