@@ -1,12 +1,32 @@
-<div class="container-fluid">
-  <div id="btc-quote"></div>
-  <h1 class="title"> Bitcoin ATMs<span style="color:#f7931a">!</span></h1>
-</div>
-<hr>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      
+      <form class="navbar-form navbar-left" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control input-lg search" placeholder="Find a Bitcoin ATM..." ng-model="searchText">
+          <span class="input-group-btn">
+            <button class="btn btn-default btn-lg search searchbtn" type="button">Search!</button>
+          </span>
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right hidden-xs">
+        <li>
+          <div id="btc-quote"></div>
+          <script type="text/javascript" src="//cdn-gh.firebase.com/btcquote/embed.js"></script>
+        </li>
+      </ul>
+
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 <ui-gmap-google-map center="map.center" zoom="map.zoom">
-  <ui-gmap-marker data-ng-repeat="marker in markerList" coords="marker.coords" options="marker.options" idKey="marker.idKey" click="onClick()">
+  <ui-gmap-marker data-ng-repeat="marker in markerList | filter:searchText" coords="marker.coords" options="marker.options" idKey="marker.idKey" click="onClick()">
     <ui-gmap-window options="windowOptions" closeClick="closeClick()">
       <div>
         <span class='markertitle'>{{marker.title}}</span>
