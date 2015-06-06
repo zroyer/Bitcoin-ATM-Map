@@ -2,7 +2,7 @@
 .angular-google-map-container{
   min-height: calc(100vh - 131px);
   width: 100%;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .navbar {
@@ -14,9 +14,9 @@
 
 .search{
   height: 71px;
-  margin-top: 12px;
-  margin: 10px;
-  border-radius: 3px;
+  margin-top: 13px;
+ 
+  border-radius: 4px;
   font-size: 30px;
   background-color: #fdfdfd;
 }
@@ -28,7 +28,7 @@
 
 #btc-quote {
   margin-top: 20px;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .markertitle {

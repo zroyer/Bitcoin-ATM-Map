@@ -4,9 +4,11 @@
       
       <form class="navbar-form navbar-left" role="search">
         <div class="input-group">
-          <input type="text" class="form-control input-lg search" placeholder="Find a Bitcoin ATM..." ng-model="searchText">
+          <input type="text" class="form-control input-lg search" placeholder="Find a Bitcoin ATM..." ng-model="searchText" autofocus>
           <span class="input-group-btn">
-            <button class="btn btn-default btn-lg search searchbtn" type="button">Search!</button>
+            <button class="btn btn-default btn-lg search searchbtn" type="button">
+              <span class="glyphicon glyphicon-plus-sign"></span>
+            </button>
           </span>
         </div>
       </form>
