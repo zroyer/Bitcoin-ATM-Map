@@ -16,8 +16,13 @@ Running `grunt test` will run the unit tests with karma.
 ## To-Do
 
 additional data
+
 fix info window close logic
+
 marker clustering
+
 add-ATM functionality
+
+
 
 
